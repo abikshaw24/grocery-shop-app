@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8fff8;
+}
+
+.product-card {
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 0.3s;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.product-image-container {
+  overflow: hidden;
+}
+
+.product-image {
+  height: 220px;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.08);
+}
+
+.product-price {
+  color: #198754;
+  font-weight: bold;
+}
+
+.quantity-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.quantity-box span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.quantity-box button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.about-hero {
+  min-height: 400px;
+
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.45)
+    ),
+    url("https://images.unsplash.com/photo-1542838132-92c53300491e");
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+}
+
+.about-overlay {
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+
+.about-overlay h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.about-overlay p {
+  font-size: 22px;
+}
+
+.about-card {
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.register-card {
+  max-width: 550px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.billing-card {
+  max-width: 650px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}

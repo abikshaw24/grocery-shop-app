@@ -1,0 +1,109 @@
+.admin-login-page {
+  min-height: 100vh;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background:
+    linear-gradient(
+      rgba(24, 60, 41, 0.85),
+      rgba(24, 60, 41, 0.85)
+    );
+}
+
+
+/* =====================================
+   WRAPPER
+===================================== */
+
+.admin-login-wrapper {
+  width: 100%;
+
+  max-width: 450px;
+
+  margin: 60px auto;
+}
+
+
+/* =====================================
+   CARD
+===================================== */
+
+.admin-login-card {
+  border: none;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+}
+
+
+/* =====================================
+   HEADING
+===================================== */
+
+.admin-login-heading {
+  text-align: center;
+
+  margin-bottom: 30px;
+}
+
+.admin-icon {
+  font-size: 60px;
+
+  margin-bottom: 10px;
+}
+
+.admin-login-heading h1 {
+  color: #183c29;
+
+  font-weight: 800;
+
+  margin-bottom: 5px;
+}
+
+.admin-login-heading p {
+  color: #777;
+
+  margin: 0;
+}
+
+
+/* =====================================
+   FORM
+===================================== */
+
+.admin-login-card .form-control {
+  padding: 12px;
+
+  border-radius: 10px;
+}
+
+
+/* =====================================
+   BUTTON
+===================================== */
+
+.admin-login-card .btn-success {
+  padding: 12px;
+
+  border-radius: 10px;
+
+  font-weight: 600;
+}
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 576px) {
+
+  .admin-login-wrapper {
+    margin: 30px 15px;
+  }
+
+}

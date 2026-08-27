@@ -1,0 +1,372 @@
+/* =========================================
+   BILLING PAGE
+========================================= */
+
+.billing-page {
+  min-height: 100vh;
+
+  background: #fffdf7;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.billing-hero {
+
+  min-height: 320px;
+
+  display: flex;
+
+  align-items: center;
+
+  background-image:
+
+    linear-gradient(
+      rgba(20, 45, 20, 0.75),
+      rgba(20, 45, 20, 0.75)
+    ),
+
+    url("https://images.unsplash.com/photo-1556742049-0cfed4f6a45d");
+
+  background-size: cover;
+
+  background-position: center;
+
+  color: white;
+}
+
+
+.billing-hero-content {
+  text-align: center;
+}
+
+
+.billing-hero-content span {
+
+  color: #b8ef8a;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+
+.billing-hero-content h1 {
+
+  font-size: 55px;
+
+  font-weight: 800;
+
+  margin: 15px 0;
+}
+
+
+.billing-hero-content p {
+
+  color: #eeeeee;
+
+  font-size: 18px;
+}
+
+
+/* =========================================
+   BILLING CARD
+========================================= */
+
+.billing-card {
+
+  border: none;
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 7px 25px
+    rgba(0, 0, 0, 0.07);
+}
+
+
+.billing-card .card-body {
+
+  padding: 35px;
+}
+
+
+.billing-card h3,
+.billing-summary h3 {
+
+  font-weight: 800;
+
+  color: #263526;
+
+  margin-bottom: 8px;
+}
+
+
+.billing-subtitle {
+
+  color: #777;
+
+  margin-bottom: 30px;
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.billing-card
+.form-label {
+
+  font-weight: 600;
+
+  color: #374536;
+}
+
+
+.billing-card
+.form-control {
+
+  border-radius: 8px;
+
+  padding: 12px;
+
+  border:
+    1px solid #d8ded4;
+}
+
+
+.billing-card
+.form-control:focus {
+
+  border-color: #70b62c;
+
+  box-shadow:
+    0 0 0 0.2rem
+    rgba(112, 182, 44, 0.15);
+}
+
+
+/* =========================================
+   PLACE ORDER
+========================================= */
+
+.place-order-button {
+
+  width: 100%;
+
+  border: none;
+
+  border-radius: 8px;
+
+  padding: 14px;
+
+  background: #70b62c;
+
+  font-size: 17px;
+
+  font-weight: 700;
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+
+.place-order-button:hover {
+
+  background: #57991d;
+
+  transform:
+    translateY(-2px);
+}
+
+
+/* =========================================
+   ORDER SUMMARY
+========================================= */
+
+.billing-summary {
+
+  border: none;
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 7px 25px
+    rgba(0, 0, 0, 0.07);
+
+  position: sticky;
+
+  top: 20px;
+}
+
+
+.billing-summary .card-body {
+
+  padding: 30px;
+}
+
+
+/* =========================================
+   BILLING PRODUCTS
+========================================= */
+
+.billing-product {
+
+  display: flex;
+
+  justify-content:
+    space-between;
+
+  align-items: center;
+
+  gap: 20px;
+
+  padding: 15px 0;
+
+  border-bottom:
+    1px solid #eeeeee;
+}
+
+
+.billing-product:last-child {
+
+  border-bottom: none;
+}
+
+
+.billing-product strong {
+
+  display: block;
+
+  color: #263526;
+}
+
+
+.billing-product small {
+
+  display: block;
+
+  margin-top: 5px;
+
+  color: #888;
+}
+
+
+/* =========================================
+   BILLING ROW
+========================================= */
+
+.billing-row {
+
+  display: flex;
+
+  justify-content:
+    space-between;
+
+  margin-bottom: 15px;
+
+  color: #777;
+}
+
+
+.billing-row strong {
+
+  color: #263526;
+}
+
+
+/* =========================================
+   TOTAL
+========================================= */
+
+.billing-total {
+
+  display: flex;
+
+  justify-content:
+    space-between;
+
+  align-items: center;
+
+  margin-top: 20px;
+}
+
+
+.billing-total span {
+
+  font-size: 19px;
+
+  font-weight: 700;
+
+  color: #263526;
+}
+
+
+.billing-total strong {
+
+  font-size: 27px;
+
+  font-weight: 800;
+
+  color: #4f8c22;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .billing-hero {
+
+    min-height: 280px;
+  }
+
+
+  .billing-hero-content h1 {
+
+    font-size: 40px;
+  }
+
+
+  .billing-card .card-body,
+  .billing-summary .card-body {
+
+    padding: 25px;
+  }
+
+
+  .billing-summary {
+
+    position: static;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+
+  .billing-hero-content h1 {
+
+    font-size: 34px;
+  }
+
+
+  .billing-product {
+
+    gap: 10px;
+  }
+
+
+  .billing-total strong {
+
+    font-size: 23px;
+  }
+
+}

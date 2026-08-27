@@ -1,0 +1,143 @@
+/* =================================
+   CHECKOUT PAGE
+================================= */
+
+.checkout-page {
+  min-height: 100vh;
+  background: #f7faf7;
+}
+
+
+/* =================================
+   HEADING
+================================= */
+
+.checkout-heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.checkout-heading p {
+  color: #198754;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.checkout-heading h1 {
+  font-size: 45px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.checkout-heading span {
+  color: #777;
+}
+
+
+/* =================================
+   CARD
+================================= */
+
+.checkout-card {
+  border: none;
+  border-radius: 18px;
+}
+
+
+/* =================================
+   PRODUCT
+================================= */
+
+.checkout-product {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  padding: 12px 0;
+
+  border-bottom: 1px solid #eeeeee;
+}
+
+.checkout-product:last-of-type {
+  border-bottom: none;
+}
+
+
+.checkout-product-image {
+  width: 65px;
+  height: 65px;
+
+  object-fit: cover;
+
+  border-radius: 12px;
+}
+
+
+/* =================================
+   PRICE ROW
+================================= */
+
+.checkout-row {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 15px;
+
+  font-size: 16px;
+}
+
+
+/* =================================
+   TOTAL
+================================= */
+
+.checkout-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checkout-total span {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.checkout-total strong {
+  font-size: 28px;
+  font-weight: 800;
+  color: #198754;
+}
+
+
+/* =================================
+   NOTE
+================================= */
+
+.checkout-note {
+  margin-top: 25px;
+
+  padding: 12px;
+
+  border-radius: 10px;
+
+  background: #f0f8f3;
+
+  text-align: center;
+
+  color: #555;
+
+  font-size: 14px;
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 768px) {
+
+  .checkout-heading h1 {
+    font-size: 34px;
+  }
+
+}

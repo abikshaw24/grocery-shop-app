@@ -1,0 +1,387 @@
+/* =========================================
+   ADMIN ORDERS PAGE
+========================================= */
+
+.admin-orders-page {
+
+  min-height: 100vh;
+
+  background: #fffdf7;
+
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.admin-orders-hero {
+
+  min-height: 300px;
+
+  display: flex;
+
+  align-items: center;
+
+  background-image:
+
+    linear-gradient(
+      rgba(20, 45, 20, 0.78),
+      rgba(20, 45, 20, 0.78)
+    ),
+
+    url("https://images.unsplash.com/photo-1556761175-b413da4baf72");
+
+  background-size: cover;
+
+  background-position: center;
+
+  color: white;
+
+}
+
+
+.admin-hero-content {
+
+  text-align: center;
+
+}
+
+
+.admin-hero-content span {
+
+  color: #b8ef8a;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+}
+
+
+.admin-hero-content h1 {
+
+  font-size: 50px;
+
+  font-weight: 800;
+
+  margin: 15px 0;
+
+}
+
+
+.admin-hero-content p {
+
+  color: #eeeeee;
+
+  font-size: 18px;
+
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.admin-orders-card {
+
+  border: none;
+
+  border-radius: 18px;
+
+  box-shadow:
+
+    0 8px 30px
+    rgba(0, 0, 0, 0.08);
+
+}
+
+
+.admin-orders-card .card-body {
+
+  padding: 10px;
+
+}
+
+
+/* =========================================
+   TABLE
+========================================= */
+
+.admin-orders-table {
+
+  margin-bottom: 0;
+
+  vertical-align: middle;
+
+}
+
+
+.admin-orders-table thead {
+
+  background: #f1f7ec;
+
+}
+
+
+.admin-orders-table th {
+
+  color: #31452f;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  padding: 18px 12px;
+
+  white-space: nowrap;
+
+}
+
+
+.admin-orders-table td {
+
+  padding: 18px 12px;
+
+  color: #444;
+
+}
+
+
+.admin-orders-table td strong {
+
+  display: block;
+
+  color: #263526;
+
+}
+
+
+.admin-orders-table td small {
+
+  display: block;
+
+  color: #888;
+
+  margin-top: 4px;
+
+}
+
+
+/* =========================================
+   PRODUCT
+========================================= */
+
+.admin-product {
+
+  display: flex;
+
+  justify-content:
+    space-between;
+
+  gap: 15px;
+
+  max-width: 180px;
+
+  margin-bottom: 5px;
+
+}
+
+
+.admin-product span {
+
+  color: #374536;
+
+}
+
+
+.admin-product small {
+
+  color: #70a044;
+
+  font-weight: 700;
+
+}
+
+
+/* =========================================
+   PRICE
+========================================= */
+
+.order-price {
+
+  color: #4f8c22 !important;
+
+  font-size: 17px;
+
+}
+
+
+/* =========================================
+   SELECT
+========================================= */
+
+.admin-orders-table
+.form-select {
+
+  min-width: 170px;
+
+  border-radius: 7px;
+
+  font-size: 13px;
+
+  border-color: #d7dfd2;
+
+}
+
+
+.admin-orders-table
+.form-select:focus {
+
+  border-color: #70b62c;
+
+  box-shadow:
+
+    0 0 0 0.2rem
+    rgba(112, 182, 44, 0.15);
+
+}
+
+
+.updating-text {
+
+  color: #70b62c !important;
+
+  font-size: 11px !important;
+
+}
+
+
+/* =========================================
+   ORDER COUNT
+========================================= */
+
+.order-count {
+
+  text-align: right;
+
+  margin-top: 20px;
+
+  color: #777;
+
+}
+
+
+.order-count strong {
+
+  color: #4f8c22;
+
+  font-size: 20px;
+
+}
+
+
+/* =========================================
+   LOADING
+========================================= */
+
+.admin-loading {
+
+  min-height: 400px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: #777;
+
+}
+
+
+/* =========================================
+   EMPTY
+========================================= */
+
+.empty-orders-card {
+
+  border: none;
+
+  text-align: center;
+
+  border-radius: 18px;
+
+  box-shadow:
+
+    0 8px 30px
+    rgba(0, 0, 0, 0.07);
+
+}
+
+
+.empty-orders-card .card-body {
+
+  padding: 70px 20px;
+
+}
+
+
+.empty-orders-card
+.card-body > div {
+
+  font-size: 60px;
+
+  margin-bottom: 15px;
+
+}
+
+
+.empty-orders-card h3 {
+
+  font-weight: 800;
+
+  color: #263526;
+
+}
+
+
+.empty-orders-card p {
+
+  color: #777;
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .admin-orders-hero {
+
+    min-height: 270px;
+
+  }
+
+
+  .admin-hero-content h1 {
+
+    font-size: 38px;
+
+  }
+
+
+  .admin-orders-card
+  .card-body {
+
+    padding: 5px;
+
+  }
+
+}
