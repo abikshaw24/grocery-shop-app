@@ -6,13 +6,13 @@ import {
 
 import NavigationBar from "./Components/Navbar";
 import "./App.css";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Products from "./pages/Products";
-import Contact from "./pages/Contact";
-import Checkout from "./Pages/checkout";
-import Cart from "./pages/Cart";
-import Billing from "./pages/Billing";
+import Home from "./Pages/Home";
+import About from "./Pages/About";
+import Products from "./Pages/Products";
+import Contact from "./Pages/Contact";
+import Checkout from "./Pages/Checkout";
+import Cart from "./Pages/Cart";
+import Billing from "./Pages/Billing";
 import Register from "./Pages/Register";
 import MyOrders from "./Pages/MyOrders";
 import AdminOrders from "./Pages/AdminOrders";
