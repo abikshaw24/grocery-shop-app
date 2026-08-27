@@ -5,13 +5,10 @@ import {
   Card,
   Table,
   Form,
-  Badge,
   Spinner,
   Alert
 } from "react-bootstrap";
-
 import API from "../Services/Api";
-
 import "./AdminOrders.css";
 
 
@@ -589,44 +586,28 @@ function AdminOrders() {
                               {/* ==================
                                   STATUS
                               ================== */}
+<td>
+  <Form.Select
+    value={currentStatus}
+    disabled={updatingId === order._id}
+    onChange={(e) =>
+      updateStatus(order._id, e.target.value)
+    }
+  >
+    <option value="Pending">Pending</option>
+    <option value="Confirmed">Confirmed</option>
+    <option value="Preparing">Preparing</option>
+    <option value="Out for Delivery">Out for Delivery</option>
+    <option value="Delivered">Delivered</option>
+  </Form.Select>
 
-                              <td>
-                                <select
-                                    value={order.orderStatus || "Pending"}
-                                    onChange={(e) =>
-                                    updateOrderStatus(
-                                        order._id,
-                                        e.target.value
-                                    )
-                                    }
-                                    className="form-select"
-                                    style={{
-                                    width: "160px",
-                                    fontWeight: "600"
-                                    }}
-                                >
-                                    <option value="Pending">
-                                    Pending
-                                    </option>
-
-                                    <option value="Confirmed">
-                                    Confirmed
-                                    </option>
-
-                                    <option value="Preparing">
-                                    Preparing
-                                    </option>
-
-                                    <option value="Out for Delivery">
-                                    Out for Delivery
-                                    </option>
-
-                                    <option value="Delivered">
-                                    Delivered
-                                    </option>
-                                </select>
-                                </td>
-
+  {updatingId === order._id && (
+    <small className="updating-text">
+      Updating...
+    </small>
+  )}
+</td>
+                             
 
                               {/* ==================
                                   UPDATE STATUS
