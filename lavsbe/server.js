@@ -7,7 +7,7 @@ const app = express();
 
 const PORT = process.env.PORT || 5000;
 
-const productRoutes = require("./routes/productroutes");
+const productRoutes = require("./routes/productRoutes");
 
 const orderRoutes = require("./routes/orderRoutes");
 
