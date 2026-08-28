@@ -8,7 +8,7 @@ import {
   Alert
 } from "react-bootstrap";
 
-import API from "../services/api";
+import API from "../Services/Api";
 
 
 function Register() {

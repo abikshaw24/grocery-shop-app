@@ -10,7 +10,7 @@ import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Products from "./Pages/Products";
 import Contact from "./Pages/Contact";
-import Checkout from "./Pages/Checkout";
+import CheckOut from "./Pages/checkout";
 import Cart from "./Pages/Cart";
 import Billing from "./Pages/Billing";
 import Register from "./Pages/Register";
@@ -74,7 +74,7 @@ function App() {
 
       <Route
       path="/checkout"
-      element={<Checkout />}
+      element={<CheckOut />}
       />
 
       <Route

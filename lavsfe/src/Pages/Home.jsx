@@ -13,7 +13,7 @@ import {
 
 import { useNavigate } from "react-router-dom";
 
-import API from "../services/api";
+import API from "../Services/Api";
 
 import { useCart } from "../context/CartContext";
 

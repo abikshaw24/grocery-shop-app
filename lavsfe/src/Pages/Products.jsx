@@ -11,7 +11,7 @@ import {
   Form
 } from "react-bootstrap";
 
-import API from "../services/api";
+import API from "../Services/Api";
 
 import { useCart } from "../context/CartContext";
 

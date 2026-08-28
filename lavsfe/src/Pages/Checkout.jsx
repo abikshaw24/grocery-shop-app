@@ -15,12 +15,12 @@ import { useNavigate } from "react-router-dom";
 
 import { useCart } from "../context/CartContext";
 
-import API from "../services/api";
+import API from "../Services/Api";
 
 import "./Checkout.css";
 
 
-function Checkout() {
+function CheckOut() {
 
   const navigate = useNavigate();
 
@@ -1000,4 +1000,4 @@ function Checkout() {
 }
 
 
-export default Checkout;
+export default CheckOut;
