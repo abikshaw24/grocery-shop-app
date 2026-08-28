@@ -99,10 +99,6 @@ function AdminLogin() {
           <Card className="admin-login-card shadow">
 
 
-            {/* =================================
-                CARD BODY
-            ================================= */}
-
             <Card.Body className="p-4">
 
 
