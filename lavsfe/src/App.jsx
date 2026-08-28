@@ -10,7 +10,7 @@ import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Products from "./Pages/Products";
 import Contact from "./Pages/Contact";
-import CheckOut from "./Pages/checkout";
+import CheckOut from "./Pages/CheckingOut";
 import Cart from "./Pages/Cart";
 import Billing from "./Pages/Billing";
 import Register from "./Pages/Register";
