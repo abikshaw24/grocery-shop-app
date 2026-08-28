@@ -10,7 +10,7 @@ import {
 
 import { useNavigate } from "react-router-dom";
 
-import "./Adminlogin.css";
+import "./AdminLogin.css"
 
 
 function AdminLogin() {
