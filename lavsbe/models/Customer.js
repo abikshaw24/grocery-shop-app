@@ -25,7 +25,11 @@ const customerSchema = new mongoose.Schema(
       type: String,
       required: true,
       trim: true
-    }
+    },
+
+     message: 
+     { type: String,
+       default: "" }
   },
   {
     timestamps: true
