@@ -374,83 +374,22 @@ function CheckOut() {
         response.data
       );
       
-      
-      const orderId =
-          response.data.order._id;
+      const savedOrder = response.data.order;
 
-        localStorage.setItem(
-          "lastOrderId",
-          orderId
-        );
+localStorage.setItem("lastOrderId", savedOrder._id);
+localStorage.setItem("lastOrder", JSON.stringify(savedOrder));
 
-        navigate(
-          "/order-success",
-          {
-            state: {
-              orderId: orderId
-            }
-          }
-        );
+clearCart();
 
-      // =====================================
-      // GET SAVED ORDER
-      // =====================================
+navigate("/order-success", {
+  state: {
+    orderId: savedOrder._id,
+  },
+});
 
-      const savedOrder =
-        response.data?.order;
+return;
+    
 
-
-      // =====================================
-      // CHECK ORDER RESPONSE
-      // =====================================
-
-      if (!savedOrder) {
-
-        setError(
-          "Order was created, but order details were not returned by the server."
-        );
-
-        return;
-
-      }
-
-
-      // =====================================
-      // SAVE LAST ORDER
-      // =====================================
-
-      localStorage.setItem(
-
-        "lastOrder",
-
-        JSON.stringify(savedOrder)
-
-      );
-
-
-      console.log(
-        "LAST ORDER SAVED:",
-        savedOrder
-      );
-
-
-      // =====================================
-      // CLEAR CART
-      // =====================================
-
-      clearCart();
-
-
-      console.log(
-        "CART CLEARED"
-      );
-
-
-      // =====================================
-      // GO TO BILLING
-      // =====================================
-
-      navigate("/billing");
 
     } catch (error) {
 
