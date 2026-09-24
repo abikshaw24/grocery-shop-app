@@ -217,5 +217,33 @@ router.get("/:id", async (req, res) => {
 
 });
 
+// ==================================================
+// CONTACT MESSAGE
+// ==================================================
 
+router.post("/contact", async (req, res) => {
+  try {
+    const { name, email, message } = req.body;
+
+    const contact = new Customer({
+      name,
+      email,
+      phone: "N/A",
+      address: "Contact Form",
+      message,
+    });
+
+    await contact.save();
+
+    res.status(201).json({
+      message: "Contact message saved successfully",
+    });
+  } catch (error) {
+    console.log("CONTACT ERROR:", error);
+
+    res.status(500).json({
+      message: "Unable to save contact message",
+    });
+  }
+});
 module.exports = router;
