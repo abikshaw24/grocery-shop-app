@@ -302,61 +302,29 @@ router.post("/", async (req, res) => {
 // ==================================================
 
 router.get("/all", async (req, res) => {
-
   try {
+    console.log("GET /api/orders/all called");
 
-    console.log(
-      "ADMIN REQUESTED ALL ORDERS"
-    );
+    const orders = await Order.find({})
+      .sort({ createdAt: -1 })
+      .lean();
 
-
-    const orders =
-      await Order.find()
-        .sort({
-          createdAt: -1
-        });
-
-
-    console.log(
-      "ORDERS FOUND:",
-      orders.length
-    );
-
+    console.log("Orders found:", orders.length);
 
     return res.status(200).json({
-
       success: true,
-
-      orders:
-        orders
-
+      orders,
     });
-
-
   } catch (error) {
-
-    console.log(
-      "GET ALL ORDERS ERROR:",
-      error
-    );
-
+    console.error("GET ALL ORDERS ERROR:", error);
 
     return res.status(500).json({
-
       success: false,
-
-      message:
-        "Unable to load orders",
-
-      error:
-        error.message
-
+      message: "Unable to fetch orders",
+      error: error.message,
     });
-
   }
-
 });
-
 
 // ==================================================
 // GET ORDERS OF ONE CUSTOMER
