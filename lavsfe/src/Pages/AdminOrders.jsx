@@ -6,7 +6,8 @@ import {
   Table,
   Form,
   Spinner,
-  Alert
+  Alert,
+  Badge
 } from "react-bootstrap";
 import API from "../Services/Api";
 import "./AdminOrders.css";
@@ -91,11 +92,15 @@ function AdminOrders() {
   // LOAD ORDERS WHEN PAGE OPENS
   // ==========================================
 
-  useEffect(() => {
+ useEffect(() => {
+  fetchOrders();
 
+  const interval = setInterval(() => {
     fetchOrders();
+  }, 5000);
 
-  }, []);
+  return () => clearInterval(interval);
+}, []);
 
 
   // ==========================================
@@ -606,6 +611,13 @@ function AdminOrders() {
       Updating...
     </small>
   )}
+</td>
+
+
+<td>
+  <Badge bg={getStatusVariant(currentStatus)}>
+    {currentStatus}
+  </Badge>
 </td>
                              
 

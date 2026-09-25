@@ -113,7 +113,13 @@ function Register() {
           formData
 
         );
+        const savedCustomer = response.data.customer;
 
+        localStorage.setItem(
+          "customer",
+          JSON.stringify(savedCustomer)
+        );
+        navigate("/checkout");
 
       console.log(
         "REGISTRATION RESPONSE:",
