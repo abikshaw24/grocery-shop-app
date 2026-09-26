@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import { useNavigate } from "react-router-dom";
 import {
   Container,
   Form,
@@ -12,6 +12,7 @@ import API from "../Services/Api";
 
 
 function Register() {
+  const navigate = useNavigate();
 
   const [formData, setFormData] = useState({
 
@@ -169,7 +170,7 @@ function Register() {
         JSON.stringify(customer)
 
       );
-
+       
 
       // ======================================
       // SUCCESS MESSAGE
@@ -197,7 +198,7 @@ function Register() {
 
       });
 
-
+    navigate("/checkout");
     } catch (error) {
 
       console.log(
